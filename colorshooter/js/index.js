@@ -24,7 +24,7 @@ var Game = {
 		this.maxEnemies = 6;
 		this.enemiesAlive = 0;
 		this.currentFrame = 0;
-		this.maxLives = 500;
+		this.maxLives = 1;
 		this.life = 0;
 		this.binding();
 		this.player = new Player();
@@ -203,8 +203,8 @@ var Game = {
 
 
 var Player = function(){
-	this.width = 10;
-	this.height =5;
+	this.width = 5;
+	this.height = 2;
 	this.x = Game.c.width/2 - this.width/2;
 	this.y = Game.c.height - this.height;
 	this.movingLeft = false;
